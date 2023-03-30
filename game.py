@@ -1,5 +1,11 @@
 import random
+from PIL import Image
 
+# open the image file
+image = Image.open("download.png")
+
+# show the image
+image.show()
 class pokemon:
     def __init__(self, name, health, att, spatt, defense, spdef, speed, type1, level, a1, a2, a3, a4, type2= False):
         self.name = name
